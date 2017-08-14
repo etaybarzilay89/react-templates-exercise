@@ -22,14 +22,16 @@ requirejs(['react',
     './form',
   './twoNumericPanel/twoNumericPanel',
   './dynamicForm/dynamicForm',
-  './dependedCities/dependedCities'],
+  './dependedCities/dependedCities',
+  './sliderPanel/sliderPanel'],
   function (React,
             ReactDOM,
             hello,
             form,
             twoNumericPanel,
             dynamicForm,
-            dependedCities) {
+            dependedCities,
+            sliderPanel) {
 
     'use strict';
     ReactDOM.render(React.createElement(hello), document.getElementById('hello'));
@@ -37,4 +39,5 @@ requirejs(['react',
     ReactDOM.render(React.createElement(twoNumericPanel), document.getElementById('twoNumericPanel'));
     ReactDOM.render(React.createElement(dynamicForm), document.getElementById('dynamicForm'));
     ReactDOM.render(React.createElement(dependedCities), document.getElementById('dependedCities'));
+    ReactDOM.render(React.createElement(sliderPanel), document.getElementById('sliderPanel'));
 });

@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <label>Panel height</label>
+    <input type="range" min="100" max="300" step="1" onChange="(e) => this.chooseHeight(e.target.value)">
+  </div>
+  <div>
+    <label>Vertical Padding</label>
+    <input type="range" min="10" max="100" step="1" onChange="(e) => this.choosePadding(e.target.value)">
+  </div>
+
+  <div style="{{'background-color':'green', 'border':'solid 3px red', 'height': this.state.height + 'px'}}"></div>
+</div>

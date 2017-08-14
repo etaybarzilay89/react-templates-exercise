@@ -20,15 +20,18 @@ requirejs(['react',
   'reactDOM',
   './form',
   './twoNumericPanel/twoNumericPanel',
-  './dynamicForm/dynamicForm'],
+  './dynamicForm/dynamicForm',
+  './dependedCities/dependedCities'],
   function (React,
             ReactDOM,
             form,
             twoNumericPanel,
-            dynamicForm) {
+            dynamicForm,
+            dependedCities) {
 
     'use strict';
     ReactDOM.render(React.createElement(form), document.getElementById('formContainer'));
     ReactDOM.render(React.createElement(twoNumericPanel), document.getElementById('twoNumericPanel'));
     ReactDOM.render(React.createElement(dynamicForm), document.getElementById('dynamicForm'));
+    ReactDOM.render(React.createElement(dependedCities), document.getElementById('dependedCities'));
 });

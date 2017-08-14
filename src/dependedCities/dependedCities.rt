@@ -1,0 +1,9 @@
+<form>
+  <select id="countries" onChange="(e) => this.chooseCountry(e.target.value)">
+    <option disabled selected value style="display:none"/>
+    <option rt-repeat="country in this.getCountries()">{country}</option>
+  </select>
+  <select id="cities">
+    <option rt-repeat="city in this.getCities()">{city}</option>
+  </select>
+</form>

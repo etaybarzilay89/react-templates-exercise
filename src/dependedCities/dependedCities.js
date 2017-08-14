@@ -7,11 +7,14 @@ define(['react', 'lodash', './dependedCities.rt'], function (React, _, template)
   return React.createClass({
     displayName: 'dependedCities',
     getInitialState: function() {
-      return {county: '', cities: []};
+      return {county: '', city: '', cities: []};
     },
     chooseCountry: function(country) {
       const cities = country === 'Israel' ? IsraelCities : USACities;
       this.setState({country: country, cities: cities});
+    },
+    chooseCity: function(city) {
+      this.setState({city: city});
     },
     getCountries: function () {
       return ['Israel', 'USA'];

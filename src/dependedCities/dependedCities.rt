@@ -3,7 +3,9 @@
     <option disabled selected value style="display:none"/>
     <option rt-repeat="country in this.getCountries()">{country}</option>
   </select>
-  <select id="cities">
+  <select id="cities" onChange="(e) => this.chooseCity(e.target.value)">
+    <option disabled selected value style="display:none"/>
     <option rt-repeat="city in this.getCities()">{city}</option>
   </select>
+  <button disabled="{!(this.state.country && this.state.city)}" key="button">Send</button>
 </form>

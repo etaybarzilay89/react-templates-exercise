@@ -1,0 +1,6 @@
+<div rt-props="{style:{position:'relative'}}">
+  <div rt-props="{style: this.props.style}">
+    {this.props.children}
+  </div>
+  <button rt-props="{style:{position:'absolute', right:'50%', bottom:'0'}}">Button</button>
+</div>

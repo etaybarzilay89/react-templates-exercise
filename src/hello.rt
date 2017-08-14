@@ -1,1 +1,6 @@
-<h2>ShaiK likes to over-react</h2>
+<rt-require dependency="./reuseablePanel/reuseablePanel" as="Panel"/>
+
+<h2>
+  <div>Just saying something</div>
+  <Panel style="color:red;">ETAY</Panel>
+</h2>

@@ -7,7 +7,7 @@ define(['react', 'lodash', './twoNumericPanel.rt'], function (React, _, template
       return {location: {lat: 0, long: 0}};
     },
     latChanged: function (lat) {
-      const newLocation = {long: this.state.location.long, lat:lat};
+      const newLocation = {long: this.state.location.long, lat: lat};
       this.setState({location: newLocation});
     },
     longChanged: function (long) {

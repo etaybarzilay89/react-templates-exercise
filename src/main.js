@@ -16,9 +16,19 @@ requirejs.config({
     }
 });
 
-requirejs(['react', 'reactDOM', './form', './twoNumericPanel/twoNumericPanel'], function (React, ReactDOM, form, twoNumericPanel) {
+requirejs(['react',
+  'reactDOM',
+  './form',
+  './twoNumericPanel/twoNumericPanel',
+  './dynamicForm/dynamicForm'],
+  function (React,
+            ReactDOM,
+            form,
+            twoNumericPanel,
+            dynamicForm) {
+
     'use strict';
     ReactDOM.render(React.createElement(form), document.getElementById('formContainer'));
     ReactDOM.render(React.createElement(twoNumericPanel), document.getElementById('twoNumericPanel'));
-
+    ReactDOM.render(React.createElement(dynamicForm), document.getElementById('dynamicForm'));
 });
